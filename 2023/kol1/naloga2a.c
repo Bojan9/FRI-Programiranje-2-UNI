@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
 
 char** poStolpcih(char** nizi, int stVhodnih, int* stIzhodnih) {
     int max = 0;
@@ -13,46 +11,44 @@ char** poStolpcih(char** nizi, int stVhodnih, int* stIzhodnih) {
         }
     }
 
-    char** izhodni = calloc (max, sizeof(char*));
+    char** nova = calloc(max, sizeof(char*));
     for (int i = 0; i < max; i++) {
-        char* red = calloc (stVhodnih, sizeof(char));
-        izhodni[i] = red;
+        nova[i] = calloc(stVhodnih, sizeof(char));
     }
 
-    for (int i = 0; i < max; i++) {
-        int count = 0;
-        for (int j = 0; j < stVhodnih; j++) {
-            if (i >= strlen(nizi[j])) {
-                count++;
+    for (int y = 0; y < max; y++) {
+        int p = 0;
+        for (int x = 0; x < stVhodnih; x++) {
+            if (strlen(nizi[x]) <= y) {
+                p++;
                 continue;
             }
-
-            izhodni[i][j - count] = nizi[j][i];
+            nova[y][x-p] = nizi[x][y]; 
         }
     }
 
     *stIzhodnih = max;
 
-    return izhodni;
+    return nova;
 }
 
+char* NIZI[] = {
+    "Danes",
+    "je",
+    "kolokvij",
+    "pri_P2!",
+};
+
 int main() {
-    char* vhodniNizi[] = { "Danes", "je", "kolokvij", "pri_P2!" };
-    int stVhodnih = sizeof(vhodniNizi) / sizeof(vhodniNizi[0]);
+    int stIzhodnih = 0;
+    char** rezultat = poStolpcih(NIZI, sizeof(NIZI) / sizeof(NIZI[0]), &stIzhodnih);
+    printf("%d\n", stIzhodnih);
 
-    int stIzhodnih;
-    char** izhodniNizi = poStolpcih(vhodniNizi, stVhodnih, &stIzhodnih);
-
-    // Print the output strings
     for (int i = 0; i < stIzhodnih; i++) {
-        printf("%s\n", izhodniNizi[i]);
+        printf("%s\n", rezultat[i]);
+        free(rezultat[i]);
     }
-
-    // Free the allocated memory
-    for (int i = 0; i < stIzhodnih; i++) {
-        free(izhodniNizi[i]);
-    }
-    free(izhodniNizi);
+    free(rezultat);
 
     return 0;
 }
