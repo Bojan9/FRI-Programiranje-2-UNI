@@ -8,23 +8,22 @@ int main(int argc, char** argv) {
     FILE* izlez = fopen(argv[2], "w");
 
     int c;
-    int a = 0;
+    int p = 0;
 
-    while ((c = fgetc(vlez)) != EOF) {
-
-        if (c != ' ' && a == 0) {
-            a = 1;
+    while((c = fgetc(vlez)) != EOF) {
+        if(c != ' ') {
+            p = 1;
         }
 
-        if (a == 1) {
+        if (p) {
             fputc(c, izlez);
         }
 
         if (c == '\n') {
-            a = 0;
+            p = 0;
         }
     }
-    
+
     fclose(vlez);
     fclose(izlez);
 
