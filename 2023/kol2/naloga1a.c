@@ -11,26 +11,14 @@ int main(int argc, char** argv) {
     int pred = fgetc(vlez);
 
     while ((c = fgetc(vlez)) != EOF) {
-        if (pred == '"') {
-            if (c == 'C' || c == 'c' ||
-                c == 'S' || c == 's' ||
-                c == 'Z' || c == 'z') {
-                    fputc(c, izlez);
-                    pred = fgetc(vlez);
-                } else {
-                    fputc(pred, izlez);
-                    pred = c;
-                }
-        } else {
+        if (!(pred == '"' && (c == 'C' || c == 'c' || c == 'S' || c == 's' || c == 'Z' || c == 'z'))) {
             fputc(pred, izlez);
-            pred = c;
-        }
-    }
-
-    if (pred == '"') {
-        fputc(pred, izlez);
-    }
+        } 
+        pred = c;
+    } 
     
+    fputc(pred, izlez);
+
     fclose(vlez);
     fclose(izlez);
 
