@@ -1,4 +1,4 @@
-# Programiranje 2 Izpiti
+# FRI UNI - Programiranje 2 (P2)
 
 The C Language programming course known as "Programming 2" at the University of Ljubljana, Faculty of Computer and Information Science
 
