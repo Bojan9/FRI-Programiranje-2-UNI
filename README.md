@@ -26,9 +26,9 @@ The C Language programming course known as "Programming 2" at the University of 
 
 ### Week 1 / Teden 1 (Control Constructs I)
 
-- [x] Sum modulo: Write a program that reads numbers a and b and outputs their sum modulo 10
-- [x] All equal: Write a program that reads a number n and n more numbers, and then outputs 1 if all of the n numbers are equal to each other, and 0 if this is not the case.
-- [x] Second largest: Write a program that reads a number n and n more numbers, and then outputs the second largest among those n numbers. If there are multiple numbers that are the largest, the second largest number is equal to the largest number.
+- [x] Sum modulo
+- [x] All equal
+- [x] Second largest
 
 ### Week 2 / Teden 2 (Control Constructs II)
 
