@@ -53,6 +53,9 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] Function Sum
 - [x] Function IndexAndPointer
 - [x] Function FrequencyOfLetters
+- [x] Function Search
+- [x] Function Replace
+- [x] Function Edit
 
 ### Week 6 / Teden 6 (Arrays, Pointers, Sequences II)
 
