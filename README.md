@@ -56,7 +56,16 @@ The C Language programming course known as "Programming 2" at the University of 
 
 ### Week 6 / Teden 6 (Arrays, Pointers, Sequences II)
 
+- [x] Function NumberOfCharacters
+- [x] Function CopyStringUntilCharacter
+- [x] Function StringSegmentation
+- [x] Function Unite
+
 ### Week 7 / Teden 7 (Recursion I)
+
+- [x] Sum1 (Number of Possible Recursive Combinations)
+- [x] Sum2 (List of Possible Recursive Combinations)
+- [x] Combinations
 
 ## Exams / Izpiti
 
