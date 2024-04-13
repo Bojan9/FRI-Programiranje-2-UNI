@@ -10,6 +10,8 @@ int vsota(int* zac, int* kon) {
         rez += zac[i];
     }
 
+    rez += *kon;
+
     return rez;
 }
 
