@@ -70,6 +70,40 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] Sum2 (List of Possible Recursive Combinations)
 - [x] Combinations
 
+### Week 8 / Teden 8 (Recursion II)
+
+- [x] Maximum price of N unique items of C price in V space (Knapsack problem)
+- [x] Knapsack with max K items with odd volume
+
+### Week 9 / Teden 9 (Recursion III)
+
+- [x] All Possible Lexicographical Strings of [1,N] length between two characters
+- [x] Partitions of a set
+
+### Week 10 / Teden 10 (Structures)
+
+- [x] Function findStudent
+- [x] Function findIfStudentHasSubject
+- [x] Function Enrichen
+
+### Week 11 / Teden 11 (Linked Lists)
+
+- [x] Iterative implementation of function SumOfLinkedList function
+- [x] Recursive implementation of function SumOfLinkedList function
+- [x] Iterative implementation of InsertElementInAscendingSortedLinkedList function
+- [x] Recursive implementation of InsertElementInAscendingSortedLinkedList function
+- [x] Decimate
+
+### Week 12 / Teden 12 (Text Files)
+
+- [x] Copy longest line from a file to a new file containing only said line
+- [x] Merge N number of files with an ascending list of numbers into one single file with all the numbers together in ascending order
+
+### Week 13 / Teden 13 (Binary Files)
+
+- [x] Color of a dot
+- [x] Transformation into grays
+
 ## Exams / Izpiti
 
  ```sh
