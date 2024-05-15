@@ -4,8 +4,8 @@
 
 #include "naloga3.h"
 
-#define _VISINA 49
-#define _SIRINA 26
+#define _VISINA 55
+#define _SIRINA 89
 
 #define _RANDOM_A 691
 #define _RANDOM_B 929
@@ -18,7 +18,7 @@ int _mojRandom(int r) {
 }
 
 void _napolni() {
-    int r = 42;
+    int r = 785;
     for (int i = 0; i < _VISINA; i++) {
         for (int j = 0; j < _SIRINA; j++) {
             _MATRIKA[i][j] = calloc(1, sizeof(Vozlisce));
@@ -120,8 +120,8 @@ void _pocisti(Vozlisce* v0) {
 
 int main() {
     _napolni();
-    int mesto = 1;
-    int vsebina = 22;
+    int mesto = 89;
+    int vsebina = 393;
     Vozlisce* v = vstaviStolpec(_MATRIKA[0][0], mesto, vsebina);
 
     _izpisi(v);
