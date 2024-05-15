@@ -29,3 +29,21 @@ int main(int argc, char** argv) {
 // b & a -> dvata mora da se 1, za rezultatot da bide 1
 // b | a -> eden mora da e 1, za rezultatot da bide 1
 // b ^ a -> samo eden mora da e 1, za rezultatot da bide 1
+
+// 10000000
+// &
+// 00000001
+// ---------
+// 00000000
+
+// 00000001
+// &
+// 00000001 (ili 1 samo)
+// ---------
+// 00000001
+
+// bitni ni se poslednite brojki samo, isto vazi za | i ^
+
+// 10011001 >> 1 -> 01001100
+// 11111111 >> 2 -> 00111111
+// 11111111 << 2 -> 1111111100
