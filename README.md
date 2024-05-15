@@ -190,6 +190,11 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 2022 - Exam III - Task I
 - [x] 2022 - Exam III - Task II
 - [x] 2022 - Exam III - Task III
+- -------------------------------
+- [x] 2022 - Exam IV - PDF
+- [x] 2022 - Exam IV - Task I
+- [x] 2022 - Exam IV - Task II
+- [x] 2022 - Exam IV - Task III
 
  ```sh
  2023
@@ -225,8 +230,8 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 2023 - Exam II - Task III
 - -------------------------------
 - [x] 2023 - Exam III - PDF
-- [ ] 2023 - Exam III - Task I
-- [ ] 2023 - Exam III - Task II
+- [x] 2023 - Exam III - Task I
+- [x] 2023 - Exam III - Task II
 - [ ] 2023 - Exam III - Task III
 
 ## Tutorials
