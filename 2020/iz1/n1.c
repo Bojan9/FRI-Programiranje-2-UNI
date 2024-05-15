@@ -3,10 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-int main(int argc, char** argv) {
-    FILE* vhod = fopen(argv[1], "r");
-    FILE* izhod = fopen(argv[2], "w");
-
+void obrni(FILE* vhod, FILE* izhod) {
     char** tabela = malloc(100 * sizeof(char*));
     char* temp = malloc(100 * sizeof(char));
     int counter = 0;
@@ -21,15 +18,19 @@ int main(int argc, char** argv) {
         temp = malloc(100 * sizeof(char));
     }
 
-    int i = counter - 1;
-
-    while (i >= 0) {
+    for (int i = counter - 1; i >= 0; i--) {
         fprintf(izhod, "%s", tabela[i]);
         if (i == counter - 1) {
             fputc('\n', izhod);
         }
-        i--;
     }
+}
+
+int main(int argc, char** argv) {
+    FILE* vhod = fopen(argv[1], "r");
+    FILE* izhod = fopen(argv[2], "w");
+
+    obrni(vhod, izhod);
 
     fclose(vhod);
     fclose(izhod);

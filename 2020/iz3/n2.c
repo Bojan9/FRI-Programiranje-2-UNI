@@ -9,7 +9,7 @@ typedef struct Klub {
     char **clani;
 } Klub;
 
-Klub* izdelavaj() {
+Klub* izdelaj() {
     Klub* novi_klub = malloc(sizeof(Klub));
 
     scanf("%s", (novi_klub->ime));
@@ -20,7 +20,7 @@ Klub* izdelavaj() {
     for (int i = 0; i < novi_klub->st_clanov; i++) {
         novi_klub->clani[i] = malloc(21 * sizeof(char));
         scanf("%s", novi_klub->clani[i]);
-    } 
+    }
 
     return novi_klub;
 }
