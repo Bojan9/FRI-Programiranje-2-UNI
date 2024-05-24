@@ -13,10 +13,7 @@ int rek(int n, int k) {
 
     int vk = 0;
 
-    // ako stavime 1
     vk += rek(n - 1, k + 1);
-
-    // ako stavime 2
     vk += rek(n - 1, k - 1);
 
     return vk;

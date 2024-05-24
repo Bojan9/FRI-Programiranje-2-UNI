@@ -4,8 +4,8 @@
 #include <string.h>
 
 unsigned char *preberi(char *ime_datoteke, int *sirina, int *visina, int *st_bajtov) {   
-    FILE *vhod = fopen(ime_datoteke, "rb");
-    char *smeti = malloc(10 * sizeof(char));
+    FILE* vhod = fopen(ime_datoteke, "rb");
+    char* smeti = malloc(10 * sizeof(char));
 
     fgets(smeti, 10, vhod);
     fscanf(vhod, "%d%d", sirina, visina);

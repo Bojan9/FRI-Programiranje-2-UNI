@@ -4,7 +4,6 @@
 #include <string.h>
 
 void pretvori(unsigned char *znaki, unsigned char *izhod, int n) {
-
     for (int i = 0; i < n; i++) {
         int trenutni = znaki[i];
         izhod[i * 2] = ((trenutni / 16) + '0');
@@ -16,10 +15,10 @@ void pretvori(unsigned char *znaki, unsigned char *izhod, int n) {
     }
 }
 
-int main(int argc, char** argv) {
-    FILE* vhod = fopen(argv[1], "rb");
+int main() {
+    FILE* vlez = fopen(argv[1], "rb");
     int n = atoi(argv[2]);
-    FILE* izhod = fopen(argv[3], "w");
+    FILE* izlez = fopen(argv[3], "w");
 
     unsigned char* znaki = malloc(n * sizeof(unsigned char));
     unsigned char* izpis = malloc(n * 2 * sizeof(unsigned char));
@@ -29,6 +28,7 @@ int main(int argc, char** argv) {
     }
 
     pretvori(znaki, izpis, n);
+
     for (int i = 0; i < n; i++) {
         fputc(izpis[i * 2], izhod);
         fputc(izpis[i * 2 + 1], izhod);
@@ -36,10 +36,8 @@ int main(int argc, char** argv) {
             fputc('\n', izhod);
     }
 
-    fclose(vhod);
-    fclose(izhod);
-    free(znaki);
-    free(izpis);
+    fclose(vlez);
+    fclose(izlez);
 
     return 0;
 }

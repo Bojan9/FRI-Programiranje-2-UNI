@@ -34,10 +34,13 @@ int main() {
     int st;
 
     scanf("%c", &c);
+
     while (c != '(') {
         scanf("%c", &c);
     }
+
     st = stevilo_argumentov();
+
     printf("%d\n", st);
 
     return 0;

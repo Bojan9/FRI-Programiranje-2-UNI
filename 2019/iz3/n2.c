@@ -14,7 +14,7 @@ int main() {
 
     char* niza = (char*)malloc(n * sizeof(char));
 
-    for (int i = 0; i < n + 1; i++) {
+    for (int i = 0; i < n; i++) {
         scanf("%c", &znak);
         if (znak == 'G') {
             visina++;

@@ -22,4 +22,6 @@ int main() {
     } else {
         printf("F\n");
     }
+
+    return 0;
 }

@@ -9,39 +9,36 @@ typedef struct _Vozlisce {
 } Vozlisce;
 
 Vozlisce* odstrani(Vozlisce* osnova, Vozlisce* indeksi) {
-    Vozlisce* p = osnova;
+    Vozlisce* sega = osnova;
     Vozlisce* pred = NULL;
 
-    int counter = 0;
+    int i = 0;
 
     if (indeksi->podatek == 0) {
-        while (indeksi != NULL && indeksi->podatek == counter) {
-            p = p->naslednje;
-            osnova = p;
-            counter++;
+        while (indeksi != NULL && indeksi->podatek == i) {
+            sega = sega->naslednje;
+            osnova = sega;
+            pred = sega;
             indeksi = indeksi->naslednje;
-            pred = p;
+            i++;
         }
     }
 
-    while (p != NULL) {
-        if (indeksi != NULL && indeksi->podatek == counter) {
+    while (sega != NULL) {
+        if (indeksi->podatek == i) {
+            pred->naslednje = sega->naslednje;
             indeksi = indeksi->naslednje;
-            pred->naslednje = p->naslednje;
-
-            if (indeksi == NULL) {
-                break;
-            }
         } else {
-            pred = p;
+            pred = sega;
         }
-        counter++;
-        p = p->naslednje;
+        sega = sega->naslednje;
+        i++;
     }
 
     return osnova;
 }
 
 int main() {
+
     return 0;
 }
