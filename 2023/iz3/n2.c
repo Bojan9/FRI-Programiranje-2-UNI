@@ -7,11 +7,11 @@ int** zmehcaj(int** slika, int n, int m, int d) {
     // Create a new image represented in memory
     int new_n = n - 2 * d;
     int new_m = m - 2 * d;
-    int** new_slika = (int**)malloc(new_n * sizeof(int*));
+    int** new_slika = malloc(new_n * sizeof(int*));
     
     // Iterate over the new image
     for (int i = 0; i < new_n; i++) {
-        new_slika[i] = (int*)malloc(new_m * sizeof(int));
+        new_slika[i] = malloc(new_m * sizeof(int));
         for (int j = 0; j < new_m; j++) {
             // Calculate the average gray value
             int sum = 0;

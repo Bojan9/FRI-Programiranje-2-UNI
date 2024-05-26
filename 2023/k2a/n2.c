@@ -14,47 +14,45 @@ void izlociSkupne(Vozlisce* a, Vozlisce* b, Vozlisce** na, Vozlisce** nb) {
     *na = a;
     *nb = b;
 
-    Vozlisce* predA = NULL;
-    Vozlisce* segaA = a;
-    while (segaA != NULL) {
-        Vozlisce* predB = NULL;
-        Vozlisce* segaB = b;
+    Vozlisce* sega_a = a;
+    Vozlisce* pred_a = NULL;
 
-        while (segaB != NULL) {
-            if (segaA->podatek == segaB->podatek) {
-                
-                if (segaA == a) {
-                    a = a->naslednje;
+    while (sega_a != NULL) {
+        Vozlisce* sega_b = b;
+        Vozlisce* pred_b = NULL;
+        int found = 0;
+
+        while (sega_b != NULL) {
+            if (sega_a->podatek == sega_b->podatek) {
+                if (pred_a == NULL) {
+                    *na = sega_a->naslednje;
+                } else {
+                    pred_a->naslednje = sega_a->naslednje;
                 }
 
-                if (segaB == b) {
-                    b = b->naslednje;
+                if (pred_b == NULL) {
+                    *nb = sega_b->naslednje;
+                    b = sega_b->naslednje;
+                } else {
+                    pred_b->naslednje = sega_b->naslednje;
                 }
 
-                if (predA != NULL) {
-                    predA->naslednje = segaA->naslednje;
-                }
+                sega_a = sega_a->naslednje;
+                sega_b = sega_b->naslednje;
 
-                if (predB != NULL) {
-                    predB->naslednje = segaB->naslednje;
-                }
-                segaA = NULL;
-                segaB = NULL;
+                found = 1;
+                break;
+
             } else {
-                predB = segaB;
-                segaB = segaB->naslednje;
+                pred_b = sega_b;
+                sega_b = sega_b->naslednje;
             }
         }
-        if (segaA != NULL) {
-            predA = segaA;
+
+        if (found == 0) {
+            pred_a = sega_a;
+            sega_a = sega_a->naslednje;
         }
-        if (predA != NULL) {
-            segaA = predA->naslednje;
-        } else {
-            segaA = a;
-        }
-        *na = a;
-        *nb = b;
     }
 }
 

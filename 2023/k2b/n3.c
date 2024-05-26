@@ -29,20 +29,20 @@ int main() {
 
     scanf("%d %d %d", &n, &m, &k);
 
-    int** povezavi = (int**)malloc(m * sizeof(int*));
+    int** povezavi = malloc(m * sizeof(int*));
 
     for (int i = 0; i < m; i++) {
-        povezavi[i] = (int*)malloc(3 * sizeof(int));
+        povezavi[i] = malloc(3 * sizeof(int));
     }
 
     for (int i = 0; i < m; i++) {
         scanf("%d %d %d", &povezavi[i][0], &povezavi[i][1], &povezavi[i][2]);
     }
 
-    int* path = (int*)malloc(n * sizeof(int));
+    int* path = malloc(n * sizeof(int));
     path[0] = 0;
 
-    bool* visited = (bool*)calloc(n, sizeof(bool));
+    bool* visited = calloc(n, sizeof(bool));
 
     findPaths(0, n, m, k, 0, povezavi, path, visited, 1);
 
