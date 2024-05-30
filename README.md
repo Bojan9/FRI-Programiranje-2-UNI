@@ -232,7 +232,25 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 2023 - Exam III - PDF
 - [x] 2023 - Exam III - Task I
 - [x] 2023 - Exam III - Task II
-- [ ] 2023 - Exam III - Task III
+- [x] 2023 - Exam III - Task III
+
+ ```sh
+ 2024
+ ```
+- [x] 2024 - Midterm IA - PDF
+- [x] 2024 - Midterm IA - Task I
+- [x] 2024 - Midterm IA - Task II
+- [x] 2024 - Midterm IA - Task III
+- -------------------------------
+- [x] 2024 - Midterm IB - PDF
+- [ ] 2024 - Midterm IB - Task I
+- [ ] 2024 - Midterm IB - Task II
+- [ ] 2024 - Midterm IB - Task III
+- -------------------------------
+- [x] 2024 - Midterm II - PDF
+- [ ] 2024 - Midterm II - Task I
+- [ ] 2024 - Midterm II - Task II
+- [ ] 2024 - Midterm II - Task III
 
 ## Tutorials
 
