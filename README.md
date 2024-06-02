@@ -4,8 +4,6 @@ The C Language programming course known as "Programming 2" at the University of 
 
 - Solved tasks from exams and colloquiums (2018-2023) in the subject programming 2 (programming C).
 
-- Rešene naloge iz izpitov in kolokvijev (2018-2023) pri predmetu programiranje 2 (programiranje C).
-
 ## Roadmap
 
 - [x] Control Constructs I - Week 1 
@@ -22,25 +20,25 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] Text Files - Week 12
 - [x] Binary Files - Week 13
 
-## Tasks / Vaje
+## Tasks 
 
-### Week 1 / Teden 1 (Control Constructs I)
+### Week 1 (Control Constructs I)
 
 - [x] Sum modulo
 - [x] All equal
 - [x] Second largest
 
-### Week 2 / Teden 2 (Control Constructs II)
+### Week 2 (Control Constructs II)
 
 - [x] Pythagorean Threes
 - [x] Optimal Guessing
 
-### Week 3 / Teden 3 (Functions)
+### Week 3 (Functions)
 
 - [x] Friend Numbers
 - [x] Lychrel Numbers Manipulation
 
-### Week 4 / Teden 4 (Arrays)
+### Week 4 (Arrays)
 
 - [x] Permutation variants of an array
 - [x] Biggest sum of sub-array in an array
@@ -48,7 +46,7 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] Number of pairs in an array
 
 
-### Week 5 / Teden 5 (Arrays, Pointers, Sequences I)
+### Week 5 (Arrays, Pointers, Sequences I)
 
 - [x] Function Sum
 - [x] Function IndexAndPointer
@@ -57,36 +55,36 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] Function Replace
 - [x] Function Edit
 
-### Week 6 / Teden 6 (Arrays, Pointers, Sequences II)
+### Week 6 (Arrays, Pointers, Sequences II)
 
 - [x] Function NumberOfCharacters
 - [x] Function CopyStringUntilCharacter
 - [x] Function StringSegmentation
 - [x] Function Unite
 
-### Week 7 / Teden 7 (Recursion I)
+### Week 7 (Recursion I)
 
 - [x] Sum1 (Number of Possible Recursive Combinations)
 - [x] Sum2 (List of Possible Recursive Combinations)
 - [x] Combinations
 
-### Week 8 / Teden 8 (Recursion II)
+### Week 8 (Recursion II)
 
 - [x] Maximum price of N unique items of C price in V space (Knapsack problem)
 - [x] Knapsack with max K items with odd volume
 
-### Week 9 / Teden 9 (Recursion III)
+### Week 9 (Recursion III)
 
 - [x] All Possible Lexicographical Strings of [1,N] length between two characters
 - [x] Partitions of a set
 
-### Week 10 / Teden 10 (Structures)
+### Week 10 (Structures)
 
 - [x] Function findStudent
 - [x] Function findIfStudentHasSubject
 - [x] Function Enrichen
 
-### Week 11 / Teden 11 (Linked Lists)
+### Week 11 (Linked Lists)
 
 - [x] Iterative implementation of function SumOfLinkedList function
 - [x] Recursive implementation of function SumOfLinkedList function
@@ -94,17 +92,17 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] Recursive implementation of InsertElementInAscendingSortedLinkedList function
 - [x] Decimate
 
-### Week 12 / Teden 12 (Text Files)
+### Week 12 (Text Files)
 
 - [x] Copy longest line from a file to a new file containing only said line
 - [x] Merge N number of files with an ascending list of numbers into one single file with all the numbers together in ascending order
 
-### Week 13 / Teden 13 (Binary Files)
+### Week 13 (Binary Files)
 
 - [x] Color of a dot
 - [x] Transformation into grays
 
-## Exams / Izpiti
+## Exams
 
  ```sh
  2018
@@ -248,9 +246,38 @@ The C Language programming course known as "Programming 2" at the University of 
 - [ ] 2024 - Midterm IB - Task III
 - -------------------------------
 - [x] 2024 - Midterm II - PDF
-- [ ] 2024 - Midterm II - Task I
-- [ ] 2024 - Midterm II - Task II
+- [x] 2024 - Midterm II - Task I
+- [x] 2024 - Midterm II - Task II
 - [ ] 2024 - Midterm II - Task III
+
+## LeetCode Tasks
+
+### Linked List
+- [x] 2. Add Two Numbers (Medium)
+- [x] 19. Remove Nth Node From End of List (Medium)
+- [x] 21. Merge Two Sorted Lists (Easy)
+- [x] 24. Swap Nodes in Pairs (Medium)
+- [x] 61. Rotate List (Medium)
+- [x] 82. Remove Duplicates from Sorted List II (Medium)
+- [x] 83. Remove Duplicates from Sorted List (Easy)
+- [ ] 86. Partition List (Medium)
+- [ ] 92. Reverse Linked List II (Medium)
+- [ ] 109. Convert Sorted List to Binary Search Tree (Medium)
+- [ ] 114. Flatten Binary Tree to Linked List (Medium)
+- [ ] 116. Populating Next Right Pointers in Each Node (Medium)
+- [ ] 117. Populating Next Right Pointers in Each Node II (Medium)
+- [ ] 138. Copy List with Random Pointer (Medium)
+- [x] 141. Linked List Cycle (Easy)
+- [ ] 142. Linked List Cycle II (Medium)
+- [ ] 143. Reorder List (Medium)
+- [ ] 147. Insertion Sort List (Medium)
+- [ ] 148. Sort List (Medium)
+- [x] 160. Intersection of Two Linked Lists (Easy)
+- [x] 203. Remove Linked List Elements (Easy)
+- [x] 206. Reverse Linked List (Easy)
+- [x] 234. Palindrome Linked List (Easy)
+- [x] 876. Middle of the Linked List (Easy)
+- [x] 1290. Convert Binary Number in a Linked List to Integer (Easy)
 
 ## Tutorials
 
