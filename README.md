@@ -177,80 +177,80 @@ The C Language programming course known as "Programming 2" at the University of 
  2022
  ```
 - [x] 2022 - Exam I - PDF
-- [x] 2022 - Exam I - Task I
-- [x] 2022 - Exam I - Task II
-- [x] 2022 - Exam I - Task III
+- [x] 2022 - Exam I - Task I + Tests
+- [x] 2022 - Exam I - Task II + Tests
+- [x] 2022 - Exam I - Task III + Tests
 - -------------------------------
 - [x] 2022 - Exam II - PDF
-- [x] 2022 - Exam II - Task I
-- [x] 2022 - Exam II - Task II
-- [x] 2022 - Exam II - Task III
+- [x] 2022 - Exam II - Task I + Tests
+- [x] 2022 - Exam II - Task II + Tests
+- [x] 2022 - Exam II - Task III + Tests
 - -------------------------------
 - [x] 2022 - Exam III - PDF
-- [x] 2022 - Exam III - Task I
-- [x] 2022 - Exam III - Task II
-- [x] 2022 - Exam III - Task III
+- [x] 2022 - Exam III - Task I + Tests
+- [x] 2022 - Exam III - Task II + Tests
+- [x] 2022 - Exam III - Task III + Tests
 - -------------------------------
 - [x] 2022 - Exam IV - PDF
-- [x] 2022 - Exam IV - Task I
-- [x] 2022 - Exam IV - Task II
-- [x] 2022 - Exam IV - Task III
+- [x] 2022 - Exam IV - Task I + Tests
+- [x] 2022 - Exam IV - Task II + Tests
+- [x] 2022 - Exam IV - Task III + Tests
 
  ```sh
  2023
  ```
 - [x] 2023 - Midterm IA - PDF
-- [x] 2023 - Midterm IA - Task I
-- [x] 2023 - Midterm IA - Task II
-- [x] 2023 - Midterm IA - Task III
+- [x] 2023 - Midterm IA - Task I + Tests
+- [x] 2023 - Midterm IA - Task II + Tests
+- [x] 2023 - Midterm IA - Task III + Tests
 - -------------------------------
 - [x] 2023 - Midterm IB - PDF
-- [x] 2023 - Midterm IB - Task I
-- [x] 2023 - Midterm IB - Task II
-- [x] 2023 - Midterm IB - Task III
+- [x] 2023 - Midterm IB - Task I + Tests
+- [x] 2023 - Midterm IB - Task II + Tests
+- [x] 2023 - Midterm IB - Task III + Tests
 - -------------------------------
 - [x] 2023 - Midterm IIA - PDF
-- [x] 2023 - Midterm IIA - Task I
-- [x] 2023 - Midterm IIA - Task II
-- [x] 2023 - Midterm IIA - Task III
+- [x] 2023 - Midterm IIA - Task I + Tests
+- [x] 2023 - Midterm IIA - Task II + Tests
+- [x] 2023 - Midterm IIA - Task III + Tests
 - -------------------------------
 - [x] 2023 - Midterm IIB - PDF
-- [x] 2023 - Midterm IIB - Task I
-- [x] 2023 - Midterm IIB - Task II
-- [x] 2023 - Midterm IIB - Task III
+- [x] 2023 - Midterm IIB - Task I + Tests
+- [x] 2023 - Midterm IIB - Task II + Tests
+- [x] 2023 - Midterm IIB - Task III + Tests
 - -------------------------------
 - [x] 2023 - Exam I - PDF
-- [x] 2023 - Exam I - Task I
-- [x] 2023 - Exam I - Task II
-- [x] 2023 - Exam I - Task III
+- [x] 2023 - Exam I - Task I + Tests
+- [x] 2023 - Exam I - Task II + Tests
+- [x] 2023 - Exam I - Task III + Tests
 - -------------------------------
 - [x] 2023 - Exam II - PDF
-- [x] 2023 - Exam II - Task I
-- [x] 2023 - Exam II - Task II
-- [x] 2023 - Exam II - Task III
+- [x] 2023 - Exam II - Task I + Tests
+- [x] 2023 - Exam II - Task II + Tests
+- [x] 2023 - Exam II - Task III + Tests
 - -------------------------------
 - [x] 2023 - Exam III - PDF
-- [x] 2023 - Exam III - Task I
-- [x] 2023 - Exam III - Task II
-- [x] 2023 - Exam III - Task III
+- [x] 2023 - Exam III - Task I + Tests
+- [x] 2023 - Exam III - Task II + Tests
+- [x] 2023 - Exam III - Task III + Tests
 
  ```sh
  2024
  ```
 - [x] 2024 - Midterm IA - PDF
-- [x] 2024 - Midterm IA - Task I
-- [x] 2024 - Midterm IA - Task II
-- [x] 2024 - Midterm IA - Task III
+- [x] 2024 - Midterm IA - Task I + Tests
+- [x] 2024 - Midterm IA - Task II + Tests
+- [x] 2024 - Midterm IA - Task III + Tests
 - -------------------------------
 - [x] 2024 - Midterm IB - PDF
-- [ ] 2024 - Midterm IB - Task I
-- [ ] 2024 - Midterm IB - Task II
-- [ ] 2024 - Midterm IB - Task III
+- [ ] 2024 - Midterm IB - Task I + Tests
+- [ ] 2024 - Midterm IB - Task II + Tests
+- [ ] 2024 - Midterm IB - Task III + Tests
 - -------------------------------
 - [x] 2024 - Midterm II - PDF
-- [x] 2024 - Midterm II - Task I
-- [x] 2024 - Midterm II - Task II
-- [ ] 2024 - Midterm II - Task III
+- [x] 2024 - Midterm II - Task I + Tests
+- [x] 2024 - Midterm II - Task II + Tests
+- [ ] 2024 - Midterm II - Task III + Tests
 
 ## LeetCode Tasks
 
@@ -278,7 +278,7 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 86. Partition List
 - [x] 92. Reverse Linked List II
 - [ ] 138. Copy List with Random Pointer
-- [ ] 142. Linked List Cycle II
+- [x] 142. Linked List Cycle II
 - [ ] 143. Reorder List
 - [ ] 147. Insertion Sort List
 - [ ] 148. Sort List
