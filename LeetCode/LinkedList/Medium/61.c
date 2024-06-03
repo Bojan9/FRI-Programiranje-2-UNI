@@ -38,7 +38,7 @@ struct ListNode* rotateRight(struct ListNode* head, int k) {
     if (head == NULL || head->next == NULL || k == 0) return head;
 
     // Find the length of the list
-    struct ListNode* current = head;
+    ListNode* current = head;
     int length = 1;
 
     while (current->next != NULL) {
@@ -52,13 +52,13 @@ struct ListNode* rotateRight(struct ListNode* head, int k) {
     // Find the new tail and new head
     k = k % length;
     int stepsToNewHead = length - k;
-    struct ListNode* newTail = current;
+    ListNode* newTail = current;
 
     while (stepsToNewHead--) {
         newTail = newTail->next;
     }
 
-    struct ListNode* newHead = newTail->next;
+    ListNode* newHead = newTail->next;
     newTail->next = NULL;
 
     return newHead;

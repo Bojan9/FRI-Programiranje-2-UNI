@@ -253,31 +253,40 @@ The C Language programming course known as "Programming 2" at the University of 
 ## LeetCode Tasks
 
 ### Linked List
-- [x] 2. Add Two Numbers (Medium)
-- [x] 19. Remove Nth Node From End of List (Medium)
+
+#### Easy
+
 - [x] 21. Merge Two Sorted Lists (Easy)
-- [x] 24. Swap Nodes in Pairs (Medium)
-- [x] 61. Rotate List (Medium)
-- [x] 82. Remove Duplicates from Sorted List II (Medium)
 - [x] 83. Remove Duplicates from Sorted List (Easy)
-- [ ] 86. Partition List (Medium)
-- [ ] 92. Reverse Linked List II (Medium)
-- [ ] 109. Convert Sorted List to Binary Search Tree (Medium)
-- [ ] 114. Flatten Binary Tree to Linked List (Medium)
-- [ ] 116. Populating Next Right Pointers in Each Node (Medium)
-- [ ] 117. Populating Next Right Pointers in Each Node II (Medium)
-- [ ] 138. Copy List with Random Pointer (Medium)
 - [x] 141. Linked List Cycle (Easy)
-- [ ] 142. Linked List Cycle II (Medium)
-- [ ] 143. Reorder List (Medium)
-- [ ] 147. Insertion Sort List (Medium)
-- [ ] 148. Sort List (Medium)
 - [x] 160. Intersection of Two Linked Lists (Easy)
 - [x] 203. Remove Linked List Elements (Easy)
 - [x] 206. Reverse Linked List (Easy)
 - [x] 234. Palindrome Linked List (Easy)
 - [x] 876. Middle of the Linked List (Easy)
 - [x] 1290. Convert Binary Number in a Linked List to Integer (Easy)
+
+#### Medium
+
+- [x] 2. Add Two Numbers (Medium)
+- [x] 19. Remove Nth Node From End of List (Medium)
+- [x] 24. Swap Nodes in Pairs (Medium)
+- [x] 61. Rotate List (Medium)
+- [x] 82. Remove Duplicates from Sorted List II (Medium)
+- [x] 86. Partition List (Medium)
+- [x] 92. Reverse Linked List II (Medium)
+- [ ] 138. Copy List with Random Pointer (Medium)
+- [ ] 142. Linked List Cycle II (Medium)
+- [ ] 143. Reorder List (Medium)
+- [ ] 147. Insertion Sort List (Medium)
+- [ ] 148. Sort List (Medium)
+
+#### Linked List + Binary Tree
+
+- [ ] 109. Convert Sorted List to Binary Search Tree (Medium)
+- [ ] 114. Flatten Binary Tree to Linked List (Medium)
+- [x] 116. Populating Next Right Pointers in Each Node (Medium)
+- [x] 117. Populating Next Right Pointers in Each Node II (Medium)
 
 ## Tutorials
 
