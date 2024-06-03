@@ -2,7 +2,9 @@
 
 The C Language programming course known as "Programming 2" at the University of Ljubljana, Faculty of Computer and Information Science.
 
-- Solved tasks from exams and colloquiums (2018-2023) in the subject programming 2 (programming C).
+- Solved tasks from exams and colloquiums (2018-2024) in the subject programming 2 (programming C).
+- Solved the weekly tasks and the homework tasks.
+- Solved LeetCode tasks similar with the syllabus.
 
 ## Roadmap
 
@@ -256,30 +258,30 @@ The C Language programming course known as "Programming 2" at the University of 
 
 #### Easy
 
-- [x] 21. Merge Two Sorted Lists (Easy)
-- [x] 83. Remove Duplicates from Sorted List (Easy)
-- [x] 141. Linked List Cycle (Easy)
-- [x] 160. Intersection of Two Linked Lists (Easy)
-- [x] 203. Remove Linked List Elements (Easy)
-- [x] 206. Reverse Linked List (Easy)
-- [x] 234. Palindrome Linked List (Easy)
-- [x] 876. Middle of the Linked List (Easy)
-- [x] 1290. Convert Binary Number in a Linked List to Integer (Easy)
+- [x] 21. Merge Two Sorted Lists
+- [x] 83. Remove Duplicates from Sorted List
+- [x] 141. Linked List Cycle
+- [x] 160. Intersection of Two Linked Lists
+- [x] 203. Remove Linked List Elements
+- [x] 206. Reverse Linked List
+- [x] 234. Palindrome Linked List
+- [x] 876. Middle of the Linked List
+- [x] 1290. Convert Binary Number in a Linked List to Integer
 
 #### Medium
 
-- [x] 2. Add Two Numbers (Medium)
-- [x] 19. Remove Nth Node From End of List (Medium)
-- [x] 24. Swap Nodes in Pairs (Medium)
-- [x] 61. Rotate List (Medium)
-- [x] 82. Remove Duplicates from Sorted List II (Medium)
-- [x] 86. Partition List (Medium)
-- [x] 92. Reverse Linked List II (Medium)
-- [ ] 138. Copy List with Random Pointer (Medium)
-- [ ] 142. Linked List Cycle II (Medium)
-- [ ] 143. Reorder List (Medium)
-- [ ] 147. Insertion Sort List (Medium)
-- [ ] 148. Sort List (Medium)
+- [x] 2. Add Two Numbers
+- [x] 19. Remove Nth Node From End of List
+- [x] 24. Swap Nodes in Pairs
+- [x] 61. Rotate List
+- [x] 82. Remove Duplicates from Sorted List II
+- [x] 86. Partition List
+- [x] 92. Reverse Linked List II
+- [ ] 138. Copy List with Random Pointer
+- [ ] 142. Linked List Cycle II
+- [ ] 143. Reorder List
+- [ ] 147. Insertion Sort List
+- [ ] 148. Sort List
 
 #### Linked List + Binary Tree
 
