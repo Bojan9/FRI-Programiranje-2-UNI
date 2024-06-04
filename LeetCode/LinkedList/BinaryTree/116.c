@@ -35,27 +35,27 @@
 typedef struct Node Node;
 
 struct Node {
-     int val;
-     struct Node *left;
-     struct Node *right;
-     struct Node *next;
+    int val;
+    struct Node *left;
+    struct Node *right;
+    struct Node *next;
 };
 
 struct Node* connect(struct Node* root) {
 	if (root == NULL) return root;
-     if (root->left == NULL || root->right == NULL) return root;
+    if (root->left == NULL || root->right == NULL) return root;
 
-     root->left->next = root->right;
-     if (root->next) {
-          root->right->next = root->next->left;
-     } else {
-          root->right->next = NULL;
-     }
+    root->left->next = root->right;
+    if (root->next) {
+        root->right->next = root->next->left;
+    } else {
+        root->right->next = NULL;
+    }
 
-     connect(root->left);
-     connect(root->right);
+    connect(root->left);
+    connect(root->right);
 
-     return root;
+    return root;
 }
 
 

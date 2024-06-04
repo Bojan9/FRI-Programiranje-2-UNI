@@ -39,17 +39,17 @@ struct ListNode {
 };
 
 struct ListNode* reverseList(struct ListNode* head) {
-    ListNode* before = NULL;
+    ListNode* prev = NULL;
     ListNode* next = NULL;
 
-    while (head != NULL) {
+    while (head) {
         next = head->next;
-        head->next = before;
-        before = head;
+        head->next = prev;
+        prev = head;
         head = next;
     }
 
-    return before;
+    return prev;
 }
 
 

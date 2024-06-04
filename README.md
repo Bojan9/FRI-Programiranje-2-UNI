@@ -281,11 +281,15 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 143. Reorder List
 - [x] 147. Insertion Sort List
 - [x] 148. Sort List
+- [x] 237. Delete Node in a Linked List
+- [x] 328. Odd Even Linked List
+- [x] 445. Add Two Numbers II
 
 #### Linked List + Binary Tree
 
-- [ ] 109. Convert Sorted List to Binary Search Tree (Medium)
-- [ ] 114. Flatten Binary Tree to Linked List (Medium)
+- [x] 108. Convert Sorted Array to Binary Search Tree (Easy)
+- [x] 109. Convert Sorted List to Binary Search Tree (Medium)
+- [x] 114. Flatten Binary Tree to Linked List (Medium)
 - [x] 116. Populating Next Right Pointers in Each Node (Medium)
 - [x] 117. Populating Next Right Pointers in Each Node II (Medium)
 
