@@ -277,11 +277,10 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 82. Remove Duplicates from Sorted List II
 - [x] 86. Partition List
 - [x] 92. Reverse Linked List II
-- [ ] 138. Copy List with Random Pointer
 - [x] 142. Linked List Cycle II
-- [ ] 143. Reorder List
-- [ ] 147. Insertion Sort List
-- [ ] 148. Sort List
+- [x] 143. Reorder List
+- [x] 147. Insertion Sort List
+- [x] 148. Sort List
 
 #### Linked List + Binary Tree
 

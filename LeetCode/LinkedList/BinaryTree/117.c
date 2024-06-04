@@ -88,70 +88,70 @@ struct Node* connect(struct Node* root) {
 
 // Function to create a new node
 Node* newNode(int val) {
-    Node* node = (Node*)malloc(sizeof(Node));
-    node->val = val;
-    node->left = node->right = node->next = NULL;
-    return node;
+     Node* node = (Node*)malloc(sizeof(Node));
+     node->val = val;
+     node->left = node->right = node->next = NULL;
+     return node;
 }
 
 // Function to print the tree level-by-level
 void printLevels(Node* root) {
-    if (!root) return;
+     if (!root) return;
 
-    Node* start = root;
-    while (start) {
-        Node* current = start;
-        while (current) {
-            printf("%d", current->val);
-            if (current->next) {
-                printf("->");
-            }
-            current = current->next;
-        }
-        printf("->#\n");
-        start = start->left;
+     Node* start = root;
+     while (start) {
+          Node* current = start;
+          while (current) {
+               printf("%d", current->val);
+               if (current->next) {
+                    printf("->");
+               }
+               current = current->next;
+          }
+          printf("->#\n");
+          start = start->left;
     }
 }
 
 // Function to free the tree
 void freeTree(Node* root) {
-    if (!root) return;
-    freeTree(root->left);
-    freeTree(root->right);
-    free(root);
+     if (!root) return;
+     freeTree(root->left);
+     freeTree(root->right);
+     free(root);
 }
 
 // Main function for testing
 int main() {
-    // Example 1
-    Node* root1 = newNode(1);
-    root1->left = newNode(2);
-    root1->right = newNode(3);
-    root1->left->left = newNode(4);
-    root1->left->right = newNode(5);
-    root1->right->left = newNode(6);
-    root1->right->right = newNode(7);
+     // Example 1
+     Node* root1 = newNode(1);
+     root1->left = newNode(2);
+     root1->right = newNode(3);
+     root1->left->left = newNode(4);
+     root1->left->right = newNode(5);
+     root1->right->left = newNode(6);
+     root1->right->right = newNode(7);
 
-    Node* result1 = connect(root1);
-    printf("Example 1:\nInput: [1,2,3,4,5,6,7]\nOutput: ");
-    printLevels(result1);
-    freeTree(result1);
+     Node* result1 = connect(root1);
+     printf("Example 1:\nInput: [1,2,3,4,5,6,7]\nOutput: ");
+     printLevels(result1);
+     freeTree(result1);
 
-    // Example 2
-    Node* root2 = NULL;
-    Node* result2 = connect(root2);
-    printf("Example 2:\nInput: []\nOutput: []\n");
-    printLevels(result2);
-    freeTree(result2);
+     // Example 2
+     Node* root2 = NULL;
+     Node* result2 = connect(root2);
+     printf("Example 2:\nInput: []\nOutput: []\n");
+     printLevels(result2);
+     freeTree(result2);
 
-    // Example 3
-    Node* root3 = newNode(1);
-    root3->left = newNode(2);
+     // Example 3
+     Node* root3 = newNode(1);
+     root3->left = newNode(2);
 
-    Node* result3 = connect(root3);
-    printf("Custom Test Case:\nInput: [1,2]\nOutput: ");
-    printLevels(result3);
-    freeTree(result3);
+     Node* result3 = connect(root3);
+     printf("Custom Test Case:\nInput: [1,2]\nOutput: ");
+     printLevels(result3);
+     freeTree(result3);
 
-    return 0;
+     return 0;
 }

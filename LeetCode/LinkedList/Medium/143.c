@@ -41,11 +41,129 @@ struct ListNode {
      struct ListNode *next;
 };
 
+// Helper function to reverse a linked list
+struct ListNode* reverseList(struct ListNode* head) {
+     ListNode* prev = NULL;
+     ListNode* current = head;
+     ListNode* next = NULL;
+
+     while (current != NULL) {
+          next = current->next;
+          current->next = prev;
+          prev = current;
+          current = next;
+     }
+
+     return prev;
+}
+
+// Helper function to merge two linked lists
+struct ListNode* mergeLists(struct ListNode* l1, struct ListNode* l2) {
+     ListNode* dummy = malloc(sizeof(ListNode));
+     ListNode* tail = dummy;
+
+     while (l1 != NULL && l2 != NULL) {
+          tail->next = l1;
+          l1 = l1->next;
+          tail = tail->next;
+          tail->next = l2;
+          l2 = l2->next;
+          tail = tail->next;
+     }
+
+     if (l1 != NULL) tail->next = l1;
+     
+     return dummy->next;
+}
+
 void reorderList(struct ListNode* head) {
-    
+     if (head == NULL || head->next == NULL) return;
+
+     // Step 1: Find the middle of the list
+     ListNode* slow = head;
+     ListNode* fast = head;
+     while (fast->next != NULL && fast->next->next != NULL) {
+          slow = slow->next;
+          fast = fast->next->next;
+     }
+
+     // Step 2: Split the list into two halves
+     ListNode* secondHalf = slow->next;
+     slow->next = NULL;
+
+     // Step 3: Reverse the second half
+     secondHalf = reverseList(secondHalf);
+
+     // Step 4: Merge the two halves
+     head = mergeLists(head, secondHalf);
 }
 
 
 ///////////////////
 //     Tests     //
 ///////////////////
+
+
+// Helper function to create a linked list from an array
+struct ListNode* createList(int* arr, int size) {
+     if (size == 0) return NULL;
+     struct ListNode* head = (struct ListNode*)malloc(sizeof(struct ListNode));
+     head->val = arr[0];
+     head->next = NULL;
+     struct ListNode* current = head;
+     for (int i = 1; i < size; i++) {
+          current->next = (struct ListNode*)malloc(sizeof(struct ListNode));
+          current = current->next;
+          current->val = arr[i];
+          current->next = NULL;
+     }
+     return head;
+}
+
+// Helper function to print a linked list
+void printList(struct ListNode* head) {
+     struct ListNode* current = head;
+     while (current != NULL) {
+          printf("%d", current->val);
+          if (current->next != NULL) {
+               printf("->");
+          }
+          current = current->next;
+     }
+     printf("\n");
+}
+
+// Helper function to free a linked list
+void freeList(struct ListNode* head) {
+     struct ListNode* current = head;
+     while (current != NULL) {
+          struct ListNode* next = current->next;
+          free(current);
+          current = next;
+     }
+}
+
+// Main function to test reorderList
+int main() {
+     // Example 1
+     int arr1[] = {1, 2, 3, 4};
+     struct ListNode* list1 = createList(arr1, 4);
+     printf("Example 1:\nInput: ");
+     printList(list1);
+     reorderList(list1);
+     printf("Output: ");
+     printList(list1);
+     freeList(list1);
+
+     // Example 2
+     int arr2[] = {1, 2, 3, 4, 5};
+     struct ListNode* list2 = createList(arr2, 5);
+     printf("\nExample 2:\nInput: ");
+     printList(list2);
+     reorderList(list2);
+     printf("Output: ");
+     printList(list2);
+     freeList(list2);
+
+     return 0;
+}
