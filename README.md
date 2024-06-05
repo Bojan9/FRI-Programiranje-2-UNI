@@ -284,6 +284,7 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 237. Delete Node in a Linked List
 - [x] 328. Odd Even Linked List
 - [x] 445. Add Two Numbers II
+- [x] 2487. Add Two Numbers II
 
 #### Linked List + Binary Tree
 
@@ -301,6 +302,12 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 326. Power of Three
 - [x] 342. Power of Four
 - [x] 509. Fibonacci Number
+
+#### Medium
+
+- [x] 394. Different Ways to Add Parentheses
+- [x] 486. Predict the Winner
+- [x] 1823. Find the Winner of the Circular Game
 
 ## Tutorials
 

@@ -39,6 +39,12 @@ bool isPowerOfThree(int n) {
     return ((n == 1) || (n % 3 == 0 && isPowerOfThree(n / 3)));
 }
 
+
+///////////////////
+//     Tests     //
+///////////////////
+
+
 int main() {
     // Example 1
     int n1 = 27;

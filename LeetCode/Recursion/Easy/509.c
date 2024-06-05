@@ -44,6 +44,12 @@ int fib(int n){
     return fib(n - 1) + fib(n - 2);
 }
 
+
+///////////////////
+//     Tests     //
+///////////////////
+
+
 int main() {
     // Example 1
     int n1 = 2;

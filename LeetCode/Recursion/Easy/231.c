@@ -38,6 +38,12 @@ bool isPowerOfTwo(int n) {
     return ((n == 1) || (n % 2 == 0 && isPowerOfTwo(n / 2)));
 }
 
+
+///////////////////
+//     Tests     //
+///////////////////
+
+
 int main() {
     // Example 1
     int n1 = 1;
