@@ -293,6 +293,15 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 116. Populating Next Right Pointers in Each Node (Medium)
 - [x] 117. Populating Next Right Pointers in Each Node II (Medium)
 
+### Recursion
+
+#### Easy
+
+- [x] 231. Power of Two
+- [x] 326. Power of Three
+- [x] 342. Power of Four
+- [x] 509. Fibonacci Number
+
 ## Tutorials
 
 ###  Recursion (1)
