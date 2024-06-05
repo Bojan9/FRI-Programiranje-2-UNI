@@ -243,9 +243,9 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 2024 - Midterm IA - Task III + Tests
 - -------------------------------
 - [x] 2024 - Midterm IB - PDF
-- [ ] 2024 - Midterm IB - Task I + Tests
-- [ ] 2024 - Midterm IB - Task II + Tests
-- [ ] 2024 - Midterm IB - Task III + Tests
+- [x] 2024 - Midterm IB - Task I + Tests
+- [x] 2024 - Midterm IB - Task II + Tests
+- [x] 2024 - Midterm IB - Task III + Tests
 - -------------------------------
 - [x] 2024 - Midterm II - PDF
 - [x] 2024 - Midterm II - Task I + Tests

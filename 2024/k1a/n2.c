@@ -3,10 +3,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 void racionaliziraj(char** nizi) {
     if (nizi == NULL) {
         return;
@@ -21,6 +17,7 @@ void racionaliziraj(char** nizi) {
     }
 }
 
+// Test
 void izdelaj(char** nizi, int indeks, const char* niz) {
     nizi[indeks] = malloc((strlen(niz) + 1) * sizeof(char));
     strcpy(nizi[indeks], niz);
