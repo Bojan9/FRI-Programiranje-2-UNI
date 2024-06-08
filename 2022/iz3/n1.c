@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
     int w, h;
     fscanf(vlez, "%d %d", &w, &h);
     fprintf(izlez, "%d %d\n", w, h);
-    fgets(niza, sizeof(niza), vlez);
+    fgets(niza, sizeof(niza), vlez); // read new line \n
 
     fgets(niza, sizeof(niza), vlez);
     fprintf(izlez, "%s", niza);
@@ -40,7 +40,3 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-
-// fscanf - char/int citaj do space
-// fgets - citaj cela linija
-// fread - citaj cel fajl (povekje linii)

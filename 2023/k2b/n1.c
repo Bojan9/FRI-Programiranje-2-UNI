@@ -4,29 +4,27 @@
 #include <string.h>
 
 int main(int argc, char** argv) {
-    FILE* vlez = fopen(argv[1], "r");
-    FILE* izlez = fopen(argv[2], "w");
+    FILE* in = fopen(argv[1], "r");
+    FILE* out = fopen(argv[2], "w");
 
     int c;
-    int nov_red = 1;
+    bool flag = false;
 
-    while ((c = fgetc(vlez)) != EOF) {
+    while ((c = fgetc(in) != EOF)) {
         if (c != ' ') {
-            fputc(c, izlez);
-            nov_red = 0;
+            fputc(c, out);
+            flag = true;
         }
-
-        if (c == ' ' && nov_red == 0) {
-            fputc(c, izlez);
-        }
-
+        if (c == ' ' && flag == true) {
+            fputc(c, out);
+        } 
         if (c == '\n') {
-            nov_red = 1;
+            flag = false;
         }
     }
 
-    fclose(vlez);
-    fclose(izlez);
+    fclose(in);
+    fclose(out);
 
     return 0;
 }

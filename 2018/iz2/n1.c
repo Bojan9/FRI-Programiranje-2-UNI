@@ -30,5 +30,5 @@ int main() {
 
     vk_plus--;
 
-    printf("%d ", vk/vk_plus);
+    printf("%d", vk/vk_plus);
 }

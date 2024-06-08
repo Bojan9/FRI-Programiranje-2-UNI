@@ -4,23 +4,23 @@
 #include <string.h>
 
 int main(int argc, char** argv) {
-    FILE* vlez = fopen(argv[1], "rb");
-    FILE* izlez = fopen(argv[2], "wb");
+    FILE* in = fopen(argv[1], "rb");
+    FILE* out = fopen(argv[2], "wb");
 
+    int pred = fgetc(in);
     int c;
-    int pred = fgetc(vlez);
 
-    while ((c = fgetc(vlez)) != EOF) {
-        if(!(pred == 27 && c == 201)) {
-            fputc(pred, izlez);
+    while ((c = fgetc(in)) != EOF) {
+        if (!(pred == 27 && c == 201)) {
+            fputc(pred, out);
         }
         pred = c;
     }
 
-    fputc(pred, izlez);
+    fputc(pred, c);
 
-    fclose(vlez);
-    fclose(izlez);
+    fclose(in);
+    fclose(out);
 
     return 0;
 }

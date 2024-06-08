@@ -4,37 +4,37 @@
 #include <string.h>
 
 int main(int argc, char** argv) {
-    FILE* vlez1 = fopen(argv[1], "rb");
-    FILE* vlez2 = fopen(argv[2], "rb");
-    FILE* izlez = fopen(argv[3], "wb");
+    FILE* in1 = fopen(argv[1], "rb");
+    FILE* in2 = fopen(argv[2], "rb");
+    FILE* out = fopen(argv[3], "wb");
 
-    int c1;
-    int c2;
+    int c1, c2;
 
-    while ((c1 = fgetc(vlez1)) != EOF && (c2 = fgetc(vlez2)) != EOF) {
+    while ((c1 = fgetc(in1)) != EOF && (c2 = fgetc(in2)) != EOF) {
         if (c1 > c2) {
-            fputc(c1, izlez);
+            fputc(c1, out);
         } else {
-            fputc(c2, izlez);
+            fputc(c2, out);
         }
     }
 
     if (c1 == EOF && c2 != EOF) {
-        while ((c2 = fgetc(vlez2)) != EOF) {
-            fputc(c2, izlez);
+        fputc(c2, out);
+        while ((c2 = fgetc(in2)) != EOF) {
+            fputc(c2, out);
         }
     }
 
     if (c1 != EOF && c2 == EOF) {
-        fputc(c1, izlez);
-        while ((c1 = fgetc(vlez1)) != EOF) {
-            fputc(c1, izlez);
+        fputc(c1, out);
+        while ((c1 = fgetc(in1)) != EOF) {
+            fputc(c1, out);
         }
     }
 
-    fclose(vlez1);
-    fclose(vlez2);
-    fclose(izlez);
+    fclose(in1);
+    fclose(in2);
+    fclose(out);
 
     return 0;
 }

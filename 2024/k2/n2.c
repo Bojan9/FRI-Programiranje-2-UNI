@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
         niza_argv[i] = argv[i + 4];
     }
 
-    // Count the number of lines in the input file (without the last (or first) line) - last empty line.
+    // Count the number of lines in the input file - 1 (first line).
     int num_lines = count_lines(vlez) - 1;
 
     // Get first line and match the indexes from the niza_argv
@@ -72,13 +72,7 @@ int main(int argc, char** argv) {
 
         for (int j = 0; j < n - 1; j++) {
             fprintf(izlez, "%s,", niza_line[indeksi[j]]);
-        }
-
-        if (i != num_lines - 1) {
-            fprintf(izlez, "%s\n", niza_line[indeksi[n - 1]]);
-        } else {
-            fprintf(izlez, "%s", niza_line[indeksi[n - 1]]);
-        }
+        } fprintf(izlez, "%s\n", niza_line[indeksi[n - 1]]);
     }
 
     return 0;
