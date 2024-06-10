@@ -50,6 +50,11 @@ char *strstr(char *haystack, char *needle) return haystack;
 ```
 int atoi(char *str) return result;
 ```
+13. **snprintf** - Is used to store the specified string till a specified length in the specified format:
+```
+int snprintf(char *str, size_t size, char *format, …);
+// example -> snprintf(output_filename, sizeof(output_filename), "%s.%d", argv[1], chunk_index);
+```
 
 ## Memory functions
 1. **malloc** - Takes a single argument, which is the number of bytes to allocate:
