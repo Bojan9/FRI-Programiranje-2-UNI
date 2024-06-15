@@ -107,6 +107,23 @@ The C Language programming course known as "Programming 2" at the University of 
 ## Exams
 
  ```sh
+ 2016
+ ```
+- [x] 2016 - Exam I - PDF
+- [x] 2016 - Exam I - Task I
+- [x] 2016 - Exam I - Task II
+- [x] 2016 - Exam I - Task III
+- -------------------------------
+- [x] 2016 - Exam II - PDF
+- [x] 2016 - Exam II - Task I
+- [x] 2016 - Exam II - Task II
+- [x] 2016 - Exam II - Task III
+- -------------------------------
+- [x] 2016 - Exam III - PDF
+- [x] 2016 - Exam III - Task I
+- [x] 2016 - Exam III - Task II
+- [x] 2016 - Exam III - Task III
+ ```sh
  2018
  ```
 - [x] 2018 - Exam I - PDF
