@@ -303,6 +303,10 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 445. Add Two Numbers II
 - [x] 2487. Add Two Numbers II
 
+#### Hard
+
+- [x] 25. Reverse Nodes in k-Group
+
 #### Linked List + Binary Tree
 
 - [x] 108. Convert Sorted Array to Binary Search Tree (Easy)
@@ -325,6 +329,17 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 394. Different Ways to Add Parentheses
 - [x] 486. Predict the Winner
 - [x] 1823. Find the Winner of the Circular Game
+
+#### Hard
+
+- [x] 37. Sudoku Solver
+
+### Permutation
+
+- [x] 10. Regular Expression Matching
+- [x] 46. Permutations
+- [x] 60. Permutation Sequence
+- [x] 567. Permutation in String
 
 ## Tutorials
 
