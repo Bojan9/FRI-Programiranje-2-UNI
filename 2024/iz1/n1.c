@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include <string.h>
 #include <ctype.h>
 
 #define MAX_N 9
