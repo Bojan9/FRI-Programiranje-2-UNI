@@ -375,7 +375,7 @@ ListNode* middle(ListNode* head) {
 
 ListNode* loop(ListNode* head) {
     ListNode* slow = head;
-    ListNode* fast = head->next;
+    ListNode* fast = head;
 
     bool cycle = false;
     
