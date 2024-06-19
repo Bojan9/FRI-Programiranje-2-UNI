@@ -268,6 +268,11 @@ The C Language programming course known as "Programming 2" at the University of 
 - [x] 2024 - Midterm II - Task I + Tests
 - [x] 2024 - Midterm II - Task II + Tests
 - [x] 2024 - Midterm II - Task III + Tests
+- -------------------------------
+- [x] 2024 - Exam I - PDF
+- [x] 2024 - Exam I - Task I
+- [x] 2024 - Exam I - Task II
+- [x] 2024 - Exam I - Task III
 
 ## LeetCode Tasks
 
