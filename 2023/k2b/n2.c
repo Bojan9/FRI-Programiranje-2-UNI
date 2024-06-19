@@ -3,9 +3,9 @@
 #include <stdbool.h>
 #include <string.h>
 
-typedef struct _Vozlisce Vozlisce;
+typedef struct Vozlisce Vozlisce;
 
-struct _Vozlisce {
+struct Vozlisce {
     int* p;
     Vozlisce* naslednje;
 };
@@ -13,16 +13,15 @@ struct _Vozlisce {
 void izlociDuplikate(Vozlisce* zacetek) {
     while (zacetek != NULL) {
         Vozlisce* pred = zacetek;
-        Vozlisce* j = zacetek->naslednje;
+        Vozlisce* next = zacetek->naslednje;
 
-        while (j != NULL) {
-            if (zacetek->p == j->p) {
-                j = j->naslednje; 
-                pred->naslednje = j;
+        while (next != NULL) {
+            if (zacetek->p == next->p) {
+                pred->naslednje = next->naslednje;
             } else {
-                pred = j;
-                j = j->naslednje;
+                pred = next;
             }
+            next = next->naslednje;
         }
 
         zacetek = zacetek->naslednje;
@@ -30,6 +29,6 @@ void izlociDuplikate(Vozlisce* zacetek) {
 }
 
 int main() {
-
+    
     return 0;
 }

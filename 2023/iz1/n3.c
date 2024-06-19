@@ -3,58 +3,55 @@
 #include <stdbool.h>
 #include <string.h>
 
-typedef struct _Vozlisce Vozlisce;
+typedef struct Vozlisce Vozlisce;
 
-struct _Vozlisce {
-    int vsebina; // »vsebina« vozlišča
-    Vozlisce* desno; // kazalec na desnega soseda ( NULL v zadnjem stolpcu)
-    Vozlisce* dol; // kazalec na spodnjega soseda ( NULL v zadnji vrstici)
+struct Vozlisce {
+    int vsebina;
+    Vozlisce* desno;
+    Vozlisce* dol;
 };
 
 Vozlisce* vstaviStolpec(Vozlisce* start, int mesto, int vsebina) {
-    Vozlisce* sega = start;
-    Vozlisce* pred = NULL;
+    Vozlisce* temp = start;
 
-    for (int i = 0; i < mesto; i++) {
-        pred = sega;
-        sega = sega->desno;
+    for (int i = 0; i < mesto - 1; i++) {
+        temp = temp->desno;
     }
 
-    int v = vsebina;
-
-    Vozlisce* prvo = malloc(sizeof(Vozlisce));
-
-    prvo->vsebina = v;
-    prvo->desno = sega;
-    prvo->dol = NULL;
-
-    v++;
-
-    if (pred != NULL) {
-        pred->desno = prvo;
+    Vozlisce* prev = malloc(sizeof(Vozlisce));
+    prev->vsebina = vsebina;
+    if (mesto == 0) {
+        prev->desno = temp;
+        start = prev;
     } else {
-        start = prvo;
+        prev->desno = temp->desno;
+        temp->desno = prev;
     }
+    prev->dol = NULL;
 
-    while (sega->dol != NULL) {
-        sega = sega->dol;
+    while (temp->dol != NULL) {
+        temp = temp->dol;
+
+        vsebina++;
 
         Vozlisce* novo = malloc(sizeof(Vozlisce));
-
-        novo->vsebina = v;
-        novo->desno = sega;
+        novo->vsebina = vsebina;
+        if (mesto == 0) {
+            novo->desno = temp;
+        } else {
+            novo->desno = temp->desno;
+            temp->desno = novo;
+        }
         novo->dol = NULL;
 
-        prvo->dol = novo;
-        prvo = novo;
-
-        v++;
+        prev->dol = novo;
+        prev = novo;
     }
-
+    
     return start;
 }
 
 int main() {
-
+    
     return 0;
 }

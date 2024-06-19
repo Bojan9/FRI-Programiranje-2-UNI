@@ -3,9 +3,9 @@
 #include <stdbool.h>
 #include <string.h>
 
-typedef struct _Vozlisce Vozlisce;
+typedef struct Vozlisce Vozlisce;
 
-struct _Vozlisce {
+struct Vozlisce {
     int podatek;
     Vozlisce* naslednje;
 };
@@ -14,49 +14,49 @@ void izlociSkupne(Vozlisce* a, Vozlisce* b, Vozlisce** na, Vozlisce** nb) {
     *na = a;
     *nb = b;
 
-    Vozlisce* sega_a = a;
-    Vozlisce* pred_a = NULL;
+    Vozlisce* prev_a = NULL;
+    Vozlisce* now_a = a;
 
-    while (sega_a != NULL) {
-        Vozlisce* sega_b = b;
-        Vozlisce* pred_b = NULL;
-        int found = 0;
+    while (now_a != NULL) {
+        Vozlisce* prev_b = NULL;
+        Vozlisce* now_b = b;
 
-        while (sega_b != NULL) {
-            if (sega_a->podatek == sega_b->podatek) {
-                if (pred_a == NULL) {
-                    *na = sega_a->naslednje;
+        bool change = false;
+
+        while (now_b != NULL) {
+            if (now_a->podatek == now_b->podatek) {
+                if (prev_a == NULL) {
+                    *na = now_a->naslednje;
                 } else {
-                    pred_a->naslednje = sega_a->naslednje;
+                    prev_a->naslednje = now_a->naslednje;
                 }
 
-                if (pred_b == NULL) {
-                    *nb = sega_b->naslednje;
-                    b = sega_b->naslednje;
+                if (prev_b == NULL) {
+                    *nb = now_b->naslednje;
+                    b = now_b->naslednje;
                 } else {
-                    pred_b->naslednje = sega_b->naslednje;
+                    prev_b->naslednje = now_b->naslednje;
                 }
 
-                sega_a = sega_a->naslednje;
-                sega_b = sega_b->naslednje;
-
-                found = 1;
+                change = true;
                 break;
 
             } else {
-                pred_b = sega_b;
-                sega_b = sega_b->naslednje;
+                prev_b = now_b;
             }
+
+            now_b = now_b->naslednje;
         }
 
-        if (found == 0) {
-            pred_a = sega_a;
-            sega_a = sega_a->naslednje;
+        if (change == false) {
+            prev_a = now_a;
         }
+        
+        now_a = now_a->naslednje;
     }
 }
 
 int main() {
-
+    
     return 0;
 }
